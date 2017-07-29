@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="mypage_cell" id="KGk-i7-Jjw" customClass="MypageCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="287" height="48.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="订单-(1)" translatesAutoresizingMaskIntoConstraints="NO" id="QUb-zQ-tU0">
+                        <rect key="frame" x="17" y="13.5" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="eYy-f5-Bqp"/>
+                            <constraint firstAttribute="height" constant="20" id="fVT-1j-eOK"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="QUb-zQ-tU0" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="146-E9-qe4"/>
+                    <constraint firstItem="QUb-zQ-tU0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="17" id="JyF-gX-UdN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="-17" y="-50.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="订单-(1)" width="15" height="15"/>
+    </resources>
+</document>

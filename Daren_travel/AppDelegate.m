@@ -8,19 +8,51 @@
 
 #import "AppDelegate.h"
 
+#import "StartViewController.h"
+
 @interface AppDelegate ()
+
 
 @end
 
-@implementation AppDelegate
 
-
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
-    return YES;
+@implementation AppDelegate{
+    
+//    UIWindow *window;
+    UINavigationController *navigationConroller;
+    BMKMapManager *_mapManager;
 }
 
 
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    
+    
+    //百度地图注册
+    _mapManager = [[BMKMapManager alloc] init];
+    
+    BOOL ret = [_mapManager start:@"xAr0wB1a4E2Trbb6Us0yoyQcZGBUzyc8" generalDelegate:nil];
+    if (!ret) {
+        NSLog(@"manager start failed!");
+    }
+    
+    
+    [self statrView];
+    
+//    [self.window addSubview:navigationConroller.view];
+    [self.window makeKeyAndVisible];
+//    
+    return YES;
+}
+
+- (void)statrView {
+    
+    UIStoryboard *storyB = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+    StartViewController *stratVC = [storyB instantiateViewControllerWithIdentifier:@"StartViewController"];
+    
+    _window.rootViewController = stratVC;
+    
+}
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.

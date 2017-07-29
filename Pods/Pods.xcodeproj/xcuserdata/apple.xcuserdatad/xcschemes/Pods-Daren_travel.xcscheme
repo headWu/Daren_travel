@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '0B1F05F23CA0CAFCDF51D082CB1EDB54'
+               BlueprintIdentifier = '42542AB3542FDA6EF6171E40510BBD36'
                BlueprintName = 'Pods-Daren_travel'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libPods-Daren_travel.a'>
